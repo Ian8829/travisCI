@@ -1,19 +1,18 @@
-import { assert } from 'chai';
-import { divide } from '../';
+import { divide } from '../index';
 
 describe('divide()', () => {
 	it('should divide positive numbers together', () => {
-		assert.equal(divide(14, 7), 2);
-		assert.equal(divide(9, 3), 3);
+		expect(divide(14, 7)).toBe(2);
+		expect(divide(9, 3)).toBe(3);
 	});
 
 	it('should divide positive and negative numbers together', () => {
-		assert.equal(divide(-4, 2), -2);
-		assert.equal(divide(100, -10), -10);
+		expect(divide(-4, 2)).toBe(-2);
+		expect(divide(100, -10)).toBe(-10);
 	});
 
 	it('should divide negative numbers together', () => {
-		assert.equal(divide(-1, -1), 1);
-		assert.equal(divide(-4, -2), 2);
+		expect(divide(-1, -1)).toBe(1);
+		expect(divide(-4, -2)).toBe(2);
 	});
 });
