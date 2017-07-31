@@ -1,19 +1,16 @@
-'use strict';
-
-function add(a, b) {
-    return a + b;
+export function add(a, b) {
+	return a + b;
 }
 
-function subtract(a, b) {
-    return a - b;
+export function subtract(a, b) {
+	return a - b;
 }
 
-function divide(a, b) {
-    return a / b;
+export function divide(a, b) {
+	return a / b;
 }
 
-module.exports = {
-    add,
-    subtract,
-    divide
-};
+export function multiply(a, b) {
+	return a * b;
+}
+
